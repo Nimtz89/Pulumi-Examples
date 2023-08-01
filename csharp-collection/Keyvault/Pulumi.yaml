@@ -1,0 +1,3 @@
+name: Keyvault
+runtime: dotnet
+description: A minimal C# Pulumi program with the classic Azure provider

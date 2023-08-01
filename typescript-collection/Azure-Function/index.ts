@@ -7,12 +7,12 @@ import { getStorageConnectionString, signedBlobReadUrl } from "./helper-function
 import { storagesync } from "@pulumi/azure-native/types/enums";
 
 // Create an Azure Resource Group
-const resourceGroup = new resources.ResourceGroup("pulumiPoc", {
+const resourceGroup = new resources.ResourceGroup("pulumi-examples", {
     resourceGroupName: "pulumi-examples",
 });
 
 // Create a storage account
-const storageAccount = new storage.StorageAccount("sa", {
+const storageAccount = new storage.StorageAccount("pulumiexamplesstorage", {
     resourceGroupName: resourceGroup.name,
     accountName: "pulumiexamplesstorage",
     sku: {
